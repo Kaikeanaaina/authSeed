@@ -1,9 +1,9 @@
-import React, {text} from 'react'
+import React from 'react'
 
 const Dashboard = () => {
   return (
     <div>
-      <text>dashboard home, is logged in</text>
+      <p>dashboard home, is logged in</p>
     </div>
   )
 }

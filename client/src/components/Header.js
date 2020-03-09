@@ -16,7 +16,7 @@ class Header extends Component {
       default:
         return (
           [
-            <li key='3' style={{margin: '0 10px' }}>
+            <li key='1' style={{margin: '0 10px' }}>
               Credits: 4
             </li>,
             <li key='2'>
