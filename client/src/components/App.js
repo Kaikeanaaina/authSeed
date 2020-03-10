@@ -6,30 +6,43 @@ import * as actions from '../actions'
 import Header from './Header'
 import Landing from './Landing'
 import Dashboard from './Dashboard'
+import Login from './Login'
 
 
 class App extends Component {
   componentDidMount() {
     this.props.fetchUser()
+    .then(() => {console.log('123123', this.props.auth)})
+  }
+  renderRoutes() {
+    switch (this.props.auth){
+      case null:
+        return
+      case false:
+        return  <Route path="*" component={Login} />
+      default:
+        return(
+          <div>
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/home" component={Dashboard} />
+          </div>
+        )
+    }
   }
   render() {
     return (
         <BrowserRouter>
           <div className="container">
             <Header />
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/home" component={Dashboard} />
+            {this.renderRoutes()}
           </div>
         </BrowserRouter>
     )
   }
 }
 
-//maybe put a function in here
-//checks to see if this.props.auth is true (loggedin)
-  //if not it pushes to login or landing
+  function mapStateToProps({ auth }) {
+    return { auth }
+  }
 
-//then checks if a path or url exist, 
-  //if not give a 404
-
-export default connect(null, actions)(App)
+export default connect(mapStateToProps, actions)(App)
