@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux'
 import * as actions from '../actions'
 
@@ -7,6 +7,7 @@ import Header from './Header'
 import Landing from './Landing'
 import Dashboard from './Dashboard'
 import Login from './Login'
+import Page404 from './Page404'
 
 
 class App extends Component {
@@ -23,8 +24,11 @@ class App extends Component {
       default:
         return(
           <div>
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/home" component={Dashboard} />
+            <Switch>
+              <Route exact path="/" component={Landing} />
+              <Route exact path="/home" component={Dashboard} />
+              <Route component={Page404} />
+            </Switch>
           </div>
         )
     }
