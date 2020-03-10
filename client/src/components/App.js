@@ -25,4 +25,11 @@ class App extends Component {
   }
 }
 
+//maybe put a function in here
+//checks to see if this.props.auth is true (loggedin)
+  //if not it pushes to login or landing
+
+//then checks if a path or url exist, 
+  //if not give a 404
+
 export default connect(null, actions)(App)
