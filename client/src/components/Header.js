@@ -35,7 +35,7 @@ class Header extends Component {
             to={this.props.auth ? '/home' : '/'}
             className="left brand-logo"
           >
-            Emaily
+            AuthSeed
           </Link>
           <ul id="nav-mobile" className="right">
             {this.renderContent()}
