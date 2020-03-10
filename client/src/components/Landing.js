@@ -3,7 +3,7 @@ import React from 'react'
 const Landing = () => {
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1>Please Log In</h1> 
+      <h1>Landing</h1> 
     </div>
   )
 }
