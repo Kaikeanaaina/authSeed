@@ -3,9 +3,6 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 class Header extends Component {
-  componentWillMount(){
-    console.log(this.props)
-  }
   renderContent() {
     switch (this.props.auth) {
       case null:
