@@ -1,5 +1,8 @@
 npm i
 
+need to set up config/ directory
+take a look at the config/example.js file for an example
+
 npm run dev
 
 if this is a new IP Address
