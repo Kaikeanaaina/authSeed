@@ -13,11 +13,11 @@ import Landing from '../components/Landing'
 //spread operator
 const props = { note: {text: 'text note'}}
 
-console.log({...props})
+//console.log({...props})
 
 // ===============================
 const triplePrint= (a,b,c,) => {
-    console.log(`${a} ${b} ${c}`)
+    //console.log(`${a} ${b} ${c}`)
 }
 const message =[ 'react', 'is', 'awesome']
 
