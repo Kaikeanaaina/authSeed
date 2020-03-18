@@ -20,3 +20,5 @@ ReactDOM.render(
   </Provider>,
   document.querySelector('#root')
 )
+
+// index.js does not get tested 
