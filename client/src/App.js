@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux'
-import * as actions from '../actions'
+import * as actions from './actions'
 
-import Header from './Header'
-import Landing from './Landing'
-import Dashboard from './Dashboard'
-import Login from './Login'
-import Page404 from './Page404'
+import Header from './components/Header'
+import Landing from './components/Landing'
+import Dashboard from './components/Dashboard'
+import Login from './components/Login'
+import Page404 from './components/Page404'
 
 
 class App extends Component {
