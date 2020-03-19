@@ -1,5 +1,8 @@
 npm i
 
+ncu
+- in the termincal to see which dependencies need an update
+
 need to set up config/ directory
 take a look at the config/example.js file for an example
 
