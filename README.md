@@ -3,6 +3,9 @@ npm i
 ncu
 - in the termincal to see which dependencies need an update
 
+ncu -u
+- when ready, run this in the terminal to upgrade dependencies
+
 need to set up config/ directory
 take a look at the config/example.js file for an example
 
